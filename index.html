@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ロトAI予想＆統計分析シミュレーター | Loto Oracle 公式サイト</title>
+    <meta name="description" content="ロト6・ロト7・ミニロトのデータを高度分析する「ロトAI予想シミュレーター」。過去の出現確率や大小バランス、偶奇比率を瞬時に測定。データに基づく確率重視の選択を無料サポート。">
+    <meta name="keywords" content="ロトAI予想, ロト6, ロト7, ミニロト, ロト 予想, ロト 統計, ロト 分析, ロト6 過去データ, ロト 無料アプリ, Loto Oracle">
+    
+    <!-- Open Graph Protocol (OGP) -->
+    <meta property="og:title" content="ロトAI予想＆統計分析シミュレーター | Loto Oracle">
+    <meta property="og:description" content="過去データから出現傾向をグラフ分析するシミュレーター。あなたの選択した数字をAIが即時に診断します！">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://loto-oracle.github.io/">
+    <meta property="og:image" content="https://loto-oracle.github.io/assets/og-image.png">
+    <meta property="og:site_name" content="Loto Oracle">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ロトAI予想＆統計分析シミュレーター | Loto Oracle">
+    <meta name="twitter:description" content="ロト6・ロト7・ミニロトの過去データをAIで統計分析！あなたの選んだ数字のバランスを瞬時に測定する無料シミュレータアプリ。">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Schema.org JSON-LD (Structured Data) for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Loto Oracle",
+      "operatingSystem": "iOS, Android",
+      "applicationCategory": "UtilitiesApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "description": "ロト6・ロト7・ミニロトの過去データをAIが統計分析し、数字の偏りや出現頻度を可視化する無料の分析ツールアプリ（ロトAI予想）。",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "512"
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="app-icon.png" alt="Loto Oracle App Icon" class="logo-icon-img">
+                <span class="logo-text">Loto Oracle</span>
+            </div>
+            <a href="https://onelink.to/76cms6" class="header-cta-btn" id="header-download-btn">無料でダウンロード</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-background">
+                <div class="glow-orb orb-1"></div>
+                <div class="glow-orb orb-2"></div>
+            </div>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <span class="badge">ロトAI予想シミュレーター</span>
+                    <h1 class="hero-title">統計データから導く<br><span class="gradient-text">ロトAI予想シミュレーター</span></h1>
+                    <p class="hero-subtitle">
+                        過去数千回の抽選パターンを統計的に分析し、あなたの選んだ数字のバランスを瞬時に診断。直感に頼らない、データに基づくスマートな「ロトAI予想」を無料で体験できます。
+                    </p>
+                    <div class="download-buttons">
+                        <a href="https://onelink.to/76cms6" class="store-badge-btn" target="_blank" id="hero-appstore">
+                            <img src="app-store-badge.png" alt="App Store からダウンロード" class="store-badge-img">
+                        </a>
+                        <a href="https://onelink.to/76cms6" class="store-badge-btn" target="_blank" id="hero-googleplay">
+                            <img src="google-play-badge.png" alt="Google Play で手に入れよう" class="store-badge-img">
+                        </a>
+                    </div>
+                    <div class="app-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">4.8</span>
+                            <span class="stat-label">アプリ評価 ⭐</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">無料</span>
+                            <span class="stat-label">追加課金なし</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">Loto 6/7/Mini</span>
+                            <span class="stat-label">3種類のくじに対応</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-widget-area">
+                    <!-- Web Diagnostic Simulator Widget -->
+                    <div class="widget-card">
+                        <div class="widget-header">
+                            <h3>📊 ロト AI診断シミュレーター</h3>
+                            <p>あなたが選んだ数字のバランスをその場で診断します</p>
+                        </div>
+                        <div class="widget-body">
+                            <div class="widget-tabs">
+                                <button type="button" class="tab-btn active" data-type="loto6">ロト6</button>
+                                <button type="button" class="tab-btn" data-type="loto7">ロト7</button>
+                                <button type="button" class="tab-btn" data-type="miniloto">ミニロト</button>
+                            </div>
+                            <div class="number-inputs" id="inputs-container">
+                                <!-- Inputs dynamically generated by JavaScript -->
+                            </div>
+                            <button type="button" class="btn-diagnose" id="btn-diagnose">AI分析を開始する</button>
+                            <div class="random-generator-container">
+                                <button type="button" class="btn-secondary" id="btn-quick-select">クイックピック</button>
+                            </div>
+
+                            <!-- Diagnosis Result Area -->
+                            <div class="result-area" id="result-area">
+                                <!-- Placeholder -->
+                                <div class="result-placeholder" id="result-placeholder">
+                                    <div class="placeholder-icon">📈</div>
+                                    <p>上の入力欄に数字を入力し、<br>「AI分析を開始する」をクリックすると<br>詳細な診断結果がここに表示されます。</p>
+                                </div>
+
+                                <!-- Diagnosis Result Content (Hidden initially) -->
+                                <div class="result-content" id="result-content" style="display: none;">
+                                    <div class="result-score-container">
+                                        <div class="score-circle">
+                                            <svg class="progress-ring" width="120" height="120">
+                                                <circle class="progress-ring__circle-bg" stroke="#1f2937" stroke-width="8" fill="transparent" r="50" cx="60" cy="60"/>
+                                                <circle class="progress-ring__circle" stroke="url(#goldGradient)" stroke-width="8" stroke-dasharray="314.16" stroke-dashoffset="314.16" fill="transparent" r="50" cx="60" cy="60"/>
+                                                <defs>
+                                                    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                        <stop offset="0%" stop-color="#fbbf24" />
+                                                        <stop offset="100%" stop-color="#f59e0b" />
+                                                    </linearGradient>
+                                                </defs>
+                                            </svg>
+                                            <div class="score-value" id="score-value">0</div>
+                                        </div>
+                                        <div class="score-label-container">
+                                            <h4 class="score-grade" id="score-grade">Cランク</h4>
+                                            <p class="score-desc" id="score-summary">標準的な選択比率です。</p>
+                                        </div>
+                                    </div>
+                                    <div class="details-list">
+                                        <div class="detail-item">
+                                            <span class="detail-name">🔢 合計値（バランス）</span>
+                                            <span class="detail-status" id="detail-sum">-</span>
+                                        </div>
+                                        <div class="detail-item">
+                                            <span class="detail-name">⚖️ 偶数・奇数の比率</span>
+                                            <span class="detail-status" id="detail-evenodd">-</span>
+                                        </div>
+                                        <div class="detail-item">
+                                            <span class="detail-name">📐 大小バランス <span id="highlow-threshold-label">(23基準)</span></span>
+                                            <span class="detail-status" id="detail-highlow">-</span>
+                                        </div>
+                                        <div class="detail-item">
+                                            <span class="detail-name">🔗 連続する数字の数</span>
+                                            <span class="detail-status" id="detail-consecutive">-</span>
+                                        </div>
+                                    </div>
+                                    <div class="result-footer-cta">
+                                        <p>アプリ版なら、さらに詳細な**AC値**や**スランプ数字**の判定、過去データとの完全一致チェック機能が無料で利用可能です！</p>
+                                        <a href="https://onelink.to/76cms6" class="btn-small-download">アプリでさらに詳しく診断する 🚀</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section" id="features">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge">アプリの機能</span>
+                    <h2>データ分析をよりスマートに</h2>
+                    <p class="section-desc">直近の統計学・確率論アプローチにより、あなた好みの数字選びをしっかりサポートします。</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>多角的な統計シミュレーション</h3>
+                        <p>合計値、偶奇・大小バランスに加え、AC値（数字の散らばり具合）や連続出現のパターンをインテリジェントに算出します。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔮</div>
+                        <h3>AI数字選択アシスタント</h3>
+                        <p>過去数千回の当選データの特徴量から、ユーザーが設定したルールに一致する「数字候補」をワンタップで出力します。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔔</div>
+                        <h3>キャリーオーバー自動通知</h3>
+                        <p>ロト6・ロト7でキャリーオーバーが発生している場合、アプリトップで即座に状況をハイライト。購入タイミングを逃しません。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🛡️</div>
+                        <h3>安心の完全無料提供</h3>
+                        <p>すべての分析アルゴリズムや診断結果の閲覧は完全に無料。個人情報の登録も不要で、インストール後すぐに安心してご利用いただけます。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEO Article & Statistical Knowledge Section -->
+        <section class="seo-article-section">
+            <div class="container">
+                <article class="seo-article">
+                    <h2>ロト6・ロト7・ミニロト攻略における「ロトAI予想」と統計分析の重要性</h2>
+                    <p>
+                        ロト6（Loto6）、ロト7（Loto7）、ミニロト（Mini Loto）は、完全にランダムに抽選されるため、どの数字が出る確率も一見均等に見えます。しかし、過去の抽選データを「組み合わせ」としてマクロ視点で分析すると、明らかな<strong>「偏りと傾向」</strong>が存在します。「ロトAI予想」とは、これらの膨大な過去データを統計モデルや確率計算に基づいて処理し、偏りの少ない最適なバランスの組み合わせを導き出すアプローチです。
+                    </p>
+                    <h3>1. 偶数と奇数のバランス</h3>
+                    <p>
+                        選んだ数字すべてを奇数、またはすべて偶数で選んだ場合、その組み合わせが当せんする確率は極めて低くなります。統計上、最も多く出現する組み合わせは<strong>「奇数：偶数」のバランスが均等に近い割合</strong>であり、全体の80%以上がこのバランスの取れた比率に収まっています。
+                    </p>
+                    <h3>2. 大小の比率（境界値を基準とした偏り）</h3>
+                    <p>
+                        例えばロト6において1〜22を「小」、23〜43を「大」と分類した場合、やはり「大3：小3」または「大4：小2（その逆を含む）」が圧倒的な割合を占めます。ロト7やミニロトでも同様に、それぞれのしきい値（ロト7は18、ミニロトは15）に基づいた大小バランスに明確な偏りがあります。偏った選択（すべて小など）を避けることが、確率に基づいた数字選択の基本です。
+                    </p>
+                    <h3>3. AC値（算術的複雑さ）の確認</h3>
+                    <p>
+                        AC値とは、選択した数字の間で生じる「差」のパターンの多さを表す統計値です。通常のランダムな抽選結果では、AC値は高めの数値になりやすく、間隔が狭すぎる単調な数字の組み合わせは選ばれにくい傾向があります。
+                    </p>
+                    <p class="article-conclusion">
+                        これらの数式や分析を毎回手動で行うのは非常に時間がかかります。無料アプリ<strong>「Loto Oracle」</strong>は、これらの複雑な統計計算やロトAI予想アルゴリズムをワンタップで自動算出。気になる数字の組み合わせを瞬時に診断し、スマートな選択を強力にアシストします。
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- App Download CTA Section -->
+        <section class="app-download-section">
+            <div class="container">
+                <div class="download-card">
+                    <h2>データ分析を極める「ロトAI予想」</h2>
+                    <p>すべての機能を完全無料で提供。App Store & Google Playから今すぐダウンロードして、確率に基づいたスマートな数字選択を体験しましょう。</p>
+                    <div class="download-buttons center">
+                        <a href="https://onelink.to/76cms6" class="store-badge-btn" target="_blank" id="footer-appstore">
+                            <img src="app-store-badge.png" alt="App Store からダウンロード" class="store-badge-img">
+                        </a>
+                        <a href="https://onelink.to/76cms6" class="store-badge-btn" target="_blank" id="footer-googleplay">
+                            <img src="google-play-badge.png" alt="Google Play で手に入れよう" class="store-badge-img">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="logo">
+                    <img src="app-icon.png" alt="Loto Oracle App Icon" class="logo-icon-img">
+                    <span class="logo-text">Loto Oracle</span>
+                </div>
+                <p class="footer-tagline">スマートな確率・統計ベースの数字選択アシスタント</p>
+            </div>
+            
+            <div class="footer-disclaimer">
+                <h4>⚠️ 免責事項・広告ポリシーについて</h4>
+                <p>
+                    本アプリ（Loto Oracle）および当ウェブサイトは、みずほ銀行、または公式の宝くじ発売・管理団体等とは一切関係がありません。
+                </p>
+                <p>
+                    提供される数字の予想や統計分析は、当せんを保証するものではありません。宝くじの購入はご自身の責任で行ってください。本アプリはくじ券の直接販売・購入代行機能は有しておらず、ギャンブルを助長する意図はありません。
+                </p>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Loto Oracle. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
