@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1013650085"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-1013650085');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ロトAI予想＆統計分析シミュレーター | Loto Oracle 公式サイト</title>
@@ -47,6 +57,48 @@
         "ratingValue": "4.8",
         "ratingCount": "512"
       }
+    }
+    </script>
+    
+    <!-- FAQ JSON-LD Schema for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "ロト6のAI予想や統計分析は本当に役立ちますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ロト6はランダムに抽選されますが、奇数・偶数の比率や大小バランスなど、過去数千回のデータには統計的な偏り（出現確率の高いパターン）が存在します。Loto Oracleの「ロトAI予想」は、これらの偏りを解析し、極端に当せん確率の低い組み合わせ（すべて偶数など）を避ける確率重視の数字選びをサポートします。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "「ロトAI予想」の利用は無料ですか？追加課金はありますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "はい、ロト6・ロト7・ミニロトの統計シミュレーターやAI予想機能はすべて無料でご利用いただけます。一部の高度なプレミアム機能（AIカメラスキャンや収支管理）のみ月額サブスクリプションで提供していますが、基本的な分析機能は広告表示のみでいつでも無料です。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ロト6の最新の抽選結果（過去データ）はいつ更新されますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ロト6の抽選が行われる毎週月曜日と木曜日の抽選日当日、公式データが発表され次第、アプリ内の過去当せん番号データは自動的かつ迅速に更新されます。常に最新の統計に基づいた分析・ロト予想が可能です。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ロト7やミニロトのAI予想・診断にも対応していますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "はい。ロト6だけでなく、ロト7（毎週金曜日抽選）およびミニロト（毎週火曜日抽選）の統計診断・AI予想にも完全対応しています。それぞれのくじに応じた大小基準やAC値の計算ロジックが組み込まれています。"
+          }
+        }
+      ]
     }
     </script>
 </head>
@@ -213,7 +265,128 @@
             </div>
         </section>
 
-        <!-- SEO Article & Statistical Knowledge Section -->
+        <!-- Lucky Day Calendar Section -->
+        <section class="lucky-calendar-section" id="lucky-calendar">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge">開運カレンダー</span>
+                    <h2>吉日・開運日カレンダー</h2>
+                    <p class="section-desc">大安や一粒万倍日などの吉日と、不成就日を一目でチェック。宝くじの購入タイミングを賢く計画しましょう。</p>
+                </div>
+                
+                <div class="calendar-container">
+                    <!-- Left: Day Detail Card -->
+                    <div class="calendar-detail-card">
+                        <div class="detail-header">
+                            <span class="detail-date-label" id="web-detail-date">2026年3月5日 (木)</span>
+                            <span class="detail-rokuyou-badge" id="web-detail-rokuyou">大安</span>
+                        </div>
+                        <div class="detail-body">
+                            <!-- Special Combination Banners (Dynamic) -->
+                            <div class="special-banners" id="web-special-banners">
+                                <!-- Dynamic banner -->
+                            </div>
+                            
+                            <!-- Auspicious Days List -->
+                            <div class="lucky-events-list" id="web-lucky-events-list">
+                                <!-- Dynamic events list -->
+                            </div>
+                            
+                            <!-- Daily Advice / Info -->
+                            <div class="lucky-advice-box" id="web-lucky-advice-box">
+                                <!-- Dynamic advice text -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right: Monthly Calendar View -->
+                    <div class="calendar-view-card">
+                        <div class="calendar-nav-header">
+                            <button type="button" class="nav-btn" id="btn-prev-month">◀</button>
+                            <h3 class="current-month-label" id="web-month-label">2026年3月</h3>
+                            <button type="button" class="nav-btn" id="btn-next-month">▶</button>
+                        </div>
+                        
+                        <div class="calendar-grid-header">
+                            <div>日</div>
+                            <div>月</div>
+                            <div>火</div>
+                            <div>水</div>
+                            <div>木</div>
+                            <div>金</div>
+                            <div>土</div>
+                        </div>
+                        
+                        <div class="calendar-days-grid" id="web-calendar-days-grid">
+                            <!-- Days dynamically generated -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Premium Features Spotlight Section -->
+        <section class="premium-section" id="premium">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge">👑 プレミアム（サブスクリプション）</span>
+                    <h2>新登場：AIカメラスキャン＆収支管理機能</h2>
+                    <p class="section-desc">宝くじ券をカメラにかざすだけの自動当選判定と、毎回の投資額・回収額を賢く記録できる収支管理機能が新登場。</p>
+                </div>
+                
+                <div class="premium-layout">
+                    <!-- Left: CSS Phone Mockup for Scanner -->
+                    <div class="premium-showcase">
+                        <div class="phone-mockup">
+                            <div class="phone-screen">
+                                <img src="screenshot-scan.png" alt="AIカメラスキャナー画面">
+                            </div>
+                        </div>
+                        <span class="showcase-label">📸 AI高速スキャンによる自動判定画面</span>
+                    </div>
+                    
+                    <!-- Right: Premium Features Detail -->
+                    <div class="premium-details">
+                        <div class="premium-card">
+                            <div class="premium-icon-box">🔍</div>
+                            <div class="premium-text-box">
+                                <span class="card-status-badge">PREMIUM</span>
+                                <h3>AIカメラ当選判定機能</h3>
+                                <p>
+                                    宝くじ券（ロト6）をカメラにかざすだけで、AI（OCR）が枠ごとの数字を自動で読み取ります。最新の抽選結果と瞬時に照合し、当選しているかどうかを自動判定します。面倒な手入力は一切不要です。
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="premium-card">
+                            <div class="premium-icon-box">📈</div>
+                            <div class="premium-text-box">
+                                <span class="card-status-badge">PREMIUM</span>
+                                <h3>収支管理ダッシュボード</h3>
+                                <p>
+                                    毎回の「投資額（購入額）」と「回収額（当選金）」をアプリ内に記録し、収支推移をデータとして蓄積。計画的でスマートなロト運用を管理できます。
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="premium-cta-card">
+                            <h4>👑 プレミアム機能はサブスクで使い放題</h4>
+                            <p>月額サブスクリプションにご登録いただくことで、制限なくAIカメラスキャンおよび収支管理機能がすべて使い放題になります。</p>
+                            <a href="https://onelink.to/76cms6" class="btn-premium-download">アプリをダウンロードして体験</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Showcase Banner (Wide features image from user) -->
+                <div class="banner-wrapper">
+                    <h3>🔮 アプリ機能が一新！全ロトを網羅した予想リニューアル</h3>
+                    <div class="features-banner-container">
+                        <img src="features-banner.png" alt="Loto Oracle 新生機能一覧" class="features-banner-img">
+                    </div>
+                    <p class="banner-desc">条件検索、統計グラフ、一括予想、振り返り、AI判定、ミニロト・ロト7への完全対応まで。ロト攻略に必要なすべてがこの一つに。</p>
+                </div>
+            </div>
+        </section>
         <section class="seo-article-section">
             <div class="container">
                 <article class="seo-article">
@@ -237,6 +410,75 @@
                         これらの数式や分析を毎回手動で行うのは非常に時間がかかります。無料アプリ<strong>「Loto Oracle」</strong>は、これらの複雑な統計計算やロトAI予想アルゴリズムをワンタップで自動算出。気になる数字の組み合わせを瞬時に診断し、スマートな選択を強力にアシストします。
                     </p>
                 </article>
+            </div>
+        </section>
+
+        <!-- CSV Data Download Section (SEO Link Magnet) -->
+        <section class="data-download-section" id="data-download">
+            <div class="container">
+                <div class="download-card-wrapper">
+                    <div class="download-card-content">
+                        <span class="badge">データ分析・統計用</span>
+                        <h2>ロト6（Loto6）過去の当選番号 CSVデータ無料ダウンロード</h2>
+                        <p class="download-card-desc">
+                            ロト6の過去の抽選数字データ（回号、抽選日、本数字6個、ボーナス数字）をまとめたCSVファイルを完全無料でダウンロードできます。Excelでの傾向分析や、独自の統計計算シミュレーション、プログラムでのスクレイピング元データとしてご活用ください。毎週の最新データも迅速に反映されています。
+                        </p>
+                        <div class="download-action-container">
+                            <a href="loto6_history.csv" download="loto6_history.csv" class="btn-csv-download" id="btn-csv-download">
+                                <span class="btn-icon">💾</span> ロト6 過去データ CSVをダウンロード (無料)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge">よくある質問</span>
+                    <h2>ロト予想・統計に関するFAQ</h2>
+                    <p class="section-desc">「ロトAI予想」や統計分析ツールの使い方についてお答えします。</p>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>ロト6のAI予想や統計分析は本当に役立ちますか？</h4>
+                            <span class="faq-toggle-icon">＋</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>ロト6はランダムに抽選されますが、奇数・偶数の比率や大小バランスなど、過去数千回のデータには統計的な偏り（出現確率の高いパターン）が存在します。Loto Oracleの「ロトAI予想」は、これらの偏りを解析し、極端に当せん確率の低い組み合わせ（すべて偶数など）を避ける確率重視の数字選びをサポートします。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>「ロトAI予想」の利用は無料ですか？追加課金はありますか？</h4>
+                            <span class="faq-toggle-icon">＋</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>はい、ロト6・ロト7・ミニロトの統計シミュレーターやAI予想機能はすべて無料でご利用いただけます。一部の高度なプレミアム機能（AIカメラスキャンや収支管理）のみ月額サブスクリプションで提供していますが、基本的な分析機能は広告表示のみでいつでも無料です。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>ロト6の最新の抽選結果（過去データ）はいつ更新されますか？</h4>
+                            <span class="faq-toggle-icon">＋</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>ロト6の抽選が行われる毎週月曜日と木曜日の抽選日当日、公式データが発表され次第、アプリ内の過去当せん番号データは自動的かつ迅速に更新されます。常に最新の統計に基づいた分析・ロト予想が可能です。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>ロト7やミニロトのAI予想・診断にも対応していますか？</h4>
+                            <span class="faq-toggle-icon">＋</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>はい。ロト6だけでなく、ロト7（毎週金曜日抽選）およびミニロト（毎週火曜日抽選）の統計診断・AI予想にも完全対応しています。それぞれのくじに応じた大小基準やAC値の計算ロジックが組み込まれています。</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
